@@ -1,0 +1,139 @@
+/* style.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #121212;
+  color: #F5C518;
+}
+
+header {
+  background-color: #1a1a1a;
+  text-align: center;
+  padding: 2rem;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.2);
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #FFD700;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #CCCCCC;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #1a1a1a;
+  border-bottom: 1px solid #333;
+}
+
+nav a {
+  color: #F5C518;
+  padding: 1rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  color: #007BFF;
+  background-color: #222;
+}
+
+section {
+  padding: 2rem;
+  margin: 1rem;
+  background-color: #1a1a1a;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.1);
+}
+
+section h2 {
+  color: #FFD700;
+}
+
+section p, section a {
+  color: #CCCCCC;
+}
+
+iframe {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 10px;
+  border: 2px solid #007BFF;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.3);
+}
+
+button {
+  background-color: transparent;
+  border: 2px solid #FFD700;
+  color: #FFD700;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #007BFF;
+  color: #fff;
+  box-shadow: 0 0 10px #007BFF;
+}
+
+footer {
+  background-color: #1a1a1a;
+  color: #888;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+@keyframes glow {
+  0% { box-shadow: 0 0 5px #007BFF; }
+  50% { box-shadow: 0 0 20px #007BFF; }
+  100% { box-shadow: 0 0 5px #007BFF; }
+}
+
+.glow-effect {
+  animation: glow 2s infinite;
+}
+
+/* ✅ Mobile Responsive Tweaks */
+@media screen and (max-width: 768px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+
+  nav a {
+    padding: 0.8rem;
+    text-align: center;
+  }
+
+  section {
+    padding: 1rem;
+    margin: 0.5rem;
+  }
+
+  button {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+
+  footer {
+    font-size: 0.8rem;
+  }
+}
